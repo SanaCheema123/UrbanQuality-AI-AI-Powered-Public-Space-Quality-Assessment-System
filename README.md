@@ -1,4 +1,5 @@
 # UrbanQuality AI: AI-Powered Public Space Quality Assessment System
+[screen-capture.webm](https://github.com/user-attachments/assets/a62ba657-ae5d-40de-9f50-d72f2608e234)
 
 ## Project Overview
 
