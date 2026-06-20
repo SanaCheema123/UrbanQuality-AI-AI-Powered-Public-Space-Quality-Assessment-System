@@ -1,0 +1,23 @@
+{
+    "best_classifier": "Random Forest Classifier",
+    "classification_accuracy": 0.7667,
+    "best_regressor": "Random Forest Regressor",
+    "regression_r2": 0.5194,
+    "feature_columns": [
+        "city",
+        "country",
+        "safety_index",
+        "healthcare_index",
+        "climate_index",
+        "purchasing_power_index",
+        "cost_of_living_index",
+        "traffic_commute_index",
+        "pollution_index",
+        "green_space_index",
+        "walkability_index",
+        "accessibility_index",
+        "comfort_index",
+        "latitude",
+        "longitude"
+    ]
+}

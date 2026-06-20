@@ -1,0 +1,269 @@
+.stApp {
+    background: #f5f7fb !important;
+    font-family: "Segoe UI", sans-serif !important;
+}
+
+.block-container {
+    padding: 1.2rem 1.8rem 2rem 1.8rem !important;
+    max-width: 100% !important;
+}
+
+/* Keep existing navbar working */
+#MainMenu,
+footer,
+header,
+section[data-testid="stSidebar"],
+section[data-testid="stSidebarNav"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Navbar buttons from app.py */
+div[data-testid="stHorizontalBlock"] .stButton > button {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    border: 1px solid #dbe4ef !important;
+    border-radius: 12px !important;
+    min-height: 46px !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04) !important;
+}
+
+div[data-testid="stHorizontalBlock"] .stButton > button:hover {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+    border-color: #2563eb !important;
+}
+
+/* HERO SECTION */
+.urban-hero {
+    background: linear-gradient(135deg, #0f3ea9 0%, #1267dc 55%, #35bdf8 100%);
+    border-radius: 24px;
+    padding: 38px 46px;
+    min-height: 245px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    box-shadow: 0 22px 50px rgba(37, 99, 235, 0.28);
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.urban-hero h4,
+.urban-hero h1,
+.urban-hero p {
+    color: white !important;
+}
+
+.urban-hero h4 {
+    font-size: 17px;
+    margin: 0 0 12px 0;
+    font-weight: 800;
+}
+
+.urban-hero h1 {
+    font-size: 42px;
+    font-weight: 900;
+    margin: 0 0 12px 0;
+}
+
+.urban-hero p {
+    font-size: 17px;
+    line-height: 1.55;
+    max-width: 650px;
+    margin: 0 0 18px 0;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.hero-btn-primary {
+    background: white;
+    color: #1d4ed8 !important;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.hero-btn-outline {
+    border: 1px solid rgba(255,255,255,0.55);
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: 800;
+    display: inline-block;
+}
+
+.hero-city {
+    font-size: 92px;
+    opacity: 0.95;
+    text-align: center;
+}
+
+/* KPI CARDS */
+.metric-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    min-height: 135px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.08);
+}
+
+.metric-icon {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.metric-card p {
+    margin: 0 0 6px 0;
+    color: #475569 !important;
+    font-weight: 750;
+    font-size: 14px;
+}
+
+.metric-card h2 {
+    margin: 0;
+    color: #0f172a !important;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.metric-card span {
+    color: #16a34a !important;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+/* DASHBOARD CARDS */
+.chart-card,
+.table-card,
+.insight-card,
+.action-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 22px;
+    border: 1px solid #edf2f7;
+    box-shadow: 0 12px 32px rgba(15, 23, 42, 0.07);
+    margin-bottom: 22px;
+}
+
+.chart-card h3,
+.table-card h3,
+.insight-card h3,
+.action-card h3 {
+    color: #0f172a !important;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-weight: 900;
+}
+
+/* FAKE MAP */
+.urban-map {
+    height: 310px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #93c5fd, #bfdbfe, #e0f2fe);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dbeafe;
+}
+
+.city-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(rgba(30, 64, 175, .18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30, 64, 175, .18) 1px, transparent 1px);
+    background-size: 34px 34px;
+}
+
+.map-dot {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+
+.excellent { background: #16a34a; }
+.good { background: #2563eb; }
+.moderate { background: #f59e0b; }
+.poor { background: #ef4444; }
+
+.map-legend {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    background: white;
+    padding: 14px;
+    border-radius: 14px;
+    color: #0f172a;
+    font-size: 13px;
+    line-height: 1.9;
+    box-shadow: 0 8px 20px rgba(15,23,42,0.12);
+}
+
+/* INSIGHTS */
+.insight-item {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    border-radius: 14px;
+    background: #f8fafc;
+    margin-bottom: 12px;
+    border: 1px solid #edf2f7;
+}
+
+.insight-icon {
+    font-size: 24px;
+}
+
+.insight-item b {
+    color: #0f172a !important;
+}
+
+.insight-item p {
+    color: #64748b !important;
+    margin: 4px 0 0 0;
+    font-size: 13px;
+}
+
+/* QUICK ACTIONS */
+.quick-btn {
+    padding: 13px 15px;
+    border-radius: 14px;
+    border: 1px solid #dbeafe;
+    color: #1d4ed8 !important;
+    background: #eff6ff;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+/* TEXT */
+[data-testid="stAppViewContainer"] h1,
+[data-testid="stAppViewContainer"] h2,
+[data-testid="stAppViewContainer"] h3,
+[data-testid="stAppViewContainer"] h4,
+[data-testid="stAppViewContainer"] p,
+[data-testid="stAppViewContainer"] label {
+    color: #0f172a !important;
+}
+
+[data-testid="stDataFrame"] {
+    border-radius: 16px;
+    overflow: hidden;
+}
